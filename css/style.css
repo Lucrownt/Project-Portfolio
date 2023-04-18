@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 body{
     min-height: 100vh;
@@ -8,66 +8,189 @@ body{
     flex-direction: column;
 }
 
-.body{
-    flex: 1;
-    display: flex;
-}
-
-.header, .footer{
+.header{
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: blueviolet;
+    justify-content: space-between;
+    background-color: #1f2937;
     color: white;
+    padding: 48px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 24px;
+      } 
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.logo{
     font-size: 24px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    font-weight: 600;
+    color: #f9faf8;
+}
+
+.hero {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 40px 200px;
+  align-content: center;
+  gap: 50px;
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.hero-text{
+   margin: 0%;
+   align-self: center;
+   padding-right: 100px;
+}
+
+.image-hero{
+    align-self: center;
+    flex-shrink: 0 1 0;
+    width: auto;
     
 }
 
-.footer{
-    font-size: 14px;
-    background-color: #dbdbdb;
-    color: rgb(7, 7, 7);
-    gap: 8px;
+h2{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
 }
-.container{
+
+button.about{
+  margin-top: 20px;
+  width: 180px;
+  background-color: #3882f6;
+  height: 36px;
+  color: #e5e7eb;
+  border: #e5e7eb solid 2px;
+  border-radius: 4px;
+  font-size: 
+    
+}
+
+.container {
     padding: 32px;
     display: flex;
     flex-wrap: wrap;
-}
-
-.card{
-    width: 300px;
-    background-color: white;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
-    margin: 8px;
+    justify-content: center;
+  }
+  
+  .card {
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 4px;
     padding: 16px;
-}
-
-.sidebar{
-    background-color: rgb(201, 143, 255);
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0;
-    flex-shrink: 0;
-    
-}
-
-ul{
-    list-style: none;
-    padding: 0px 16px;
-    font-size: 18px;
-    font-weight: 400;   
-}
-
-li{
-    margin-bottom: 16px;
+    margin: 16px;
+    width: 300px;
+    text-align: center;
+  }
+  .footer {
+    height: 72px;
+    background: #eee;
+    color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
 
-a{
-    text-decoration: none;
-    color: rgb(55, 4, 102);
-}
+  .footer a{
+    color: #1f2937;
+  }
+
+  a:hover{
+    border-bottom: #3882f6 solid 2px;
+  }
+    img.service-img {
+    width: 200px;
+  }
+ 
+  .quote{
+    display: flex;
+    padding: 120px 200px;
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-style: italic;
+    font-weight:100;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .author{
+    font-size: 18px;
+    float: right;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .cta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px 60px;
+    background-color: #3882f6;
+    gap: 60px;
+    border-radius: 4px;
+    align-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .heading-cta{
+    font-size: 24px;
+    font-weight: bold
+  }
+
+  .text-cta{
+    margin-top: 10px;
+
+  }
+
+  button.btn-cta{
+    width: 180px;
+    height: 36px;
+    color: white;
+    background-color: #3882f6;
+    border: white solid 2px;
+    border-radius: 4px;
+    font-size: 14px;
+
+  }
+
+  h3{
+    color: #1f2937;
+  }
+
+  .line{
+    text-align: center;
+    background-color: #3882f6;
+    height: 3px;
+    margin: -10px 60px 0 60px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .quote{
+        padding: 80px;
+    }
+
+  }
+
